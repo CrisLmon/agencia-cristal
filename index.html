@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Cristal</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+   <main>
+    <section class="left-side">
+        <div>
+            <img src="#" alt="logo">
+            <h1>Agencia Cristal</h1>
+            <p class="subtitle">Cuéntanos sobre tu proyecto</p>
+            <p class="description1">Transformamos tu idea en software innovador y de alto impacto</p>
+            <p class="description2">Una vez enviado, nuestro líder de proyectos recibirá una notificación con tu propuesta para evaluarla y darte una respuesta ágil</p>
+        </div>
+    </section>
+    <section class="right-side">
+        <h2>Registrar Proyecto</h2>
+        <form action="#" class="project-form">
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128221;</span>
+                </label>
+                <input type="text" name="nombre" placeholder="Nombre del proyecto" required>
+            </div>
+            <div>
+                <label>
+                    <span class="logo-form">&#128197;</span>
+                </label>
+                <input type="text" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128221;</span>
+                </label>
+                <textarea name="descripcion" placeholder="Descripción del proyecto" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128176;</span>
+                </label>
+                <input type="number" name="presupuesto" placeholder="Presupuesto estimado ($)" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128187;</span>
+                </label>
+                <div class="categories">
+                    <label><input type="checkbox" name="categoria" value="Web" checked> Web</label>
+                    <label><input type="checkbox" name="categoria" value="Moviles"> Móviles</label>
+                    <label><input type="checkbox" name="categoria" value="IA"> IA</label>
+                    <label><input type="checkbox" name="categoria" value="Escritorio"> Escritorio</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128100;</span>
+                </label>
+                <input type="text" name="nombre_usuario" placeholder="Su nombre" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128241;</span>
+                </label>
+                <input type="text" name="whatsapp" placeholder="Su Whatsapp" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="icon">&#128231;</span>
+                </label>
+                <input type="email" name="correo" placeholder="Su Correo" required>
+            </div>
+            <button type="submit" class="submit-btn">Enviar Proyecto</button>
+        </form>
+    </section>
+   </main>
+</body>
+</html>
