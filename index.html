@@ -19,36 +19,36 @@
     </section>
     <section class="right-side">
         <h2>Registrar Proyecto</h2>
-        <form action="#" class="project-form">
+        <form action="#" class="project-form" id="project-form">
             <div class="form-group">
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <input type="text" name="nombre" placeholder="Nombre del proyecto" required>
+                <input type="text" name="nombre" placeholder="Nombre del proyecto" required id="nombre">
             </div>
             <div>
                 <label>
                     <span class="logo-form">&#128197;</span>
                 </label>
-                <input type="text" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required>
+                <input type="text" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required id="plazo">
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <textarea name="descripcion" placeholder="Descripción del proyecto" required></textarea>
+                <textarea name="descripcion" placeholder="Descripción del proyecto" required id="descripcion"></textarea>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128176;</span>
                 </label>
-                <input type="number" name="presupuesto" placeholder="Presupuesto estimado ($)" required>
+                <input type="number" name="presupuesto" placeholder="Presupuesto estimado ($)" required id="presupuesto">
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128187;</span>
                 </label>
-                <div class="categories">
+                <div class="categories" id="categories">
                     <label><input type="checkbox" name="categoria" value="Web" checked> Web</label>
                     <label><input type="checkbox" name="categoria" value="Moviles"> Móviles</label>
                     <label><input type="checkbox" name="categoria" value="IA"> IA</label>
@@ -59,21 +59,21 @@
                 <label>
                     <span class="icon">&#128100;</span>
                 </label>
-                <input type="text" name="nombre_usuario" placeholder="Su nombre" required>
+                <input type="text" name="nombre_usuario" placeholder="Su nombre" required id="nombre_usuario">
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128241;</span>
                 </label>
-                <input type="text" name="whatsapp" placeholder="Su Whatsapp" required>
+                <input type="text" name="whatsapp" placeholder="Su Whatsapp" required id="whatsapp">
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128231;</span>
                 </label>
-                <input type="email" name="correo" placeholder="Su Correo" required>
+                <input type="email" name="correo" placeholder="Su Correo" id="correo">
             </div>
-            <button type="submit" class="submit-btn">Enviar Proyecto</button>
+            <button type="submit" class="submit-btn" id="submit-btn">Enviar Proyecto</button>
         </form>
     </section>
    </main>
