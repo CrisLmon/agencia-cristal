@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Cristal</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+  
+
 </head>
 <body>
    <main>
@@ -24,25 +28,25 @@
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <input type="text" name="nombre" placeholder="Nombre del proyecto" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del proyecto" required>
             </div>
             <div>
                 <label>
                     <span class="logo-form">&#128197;</span>
                 </label>
-                <input type="text" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required>
+                <input type="text" id="plazo" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <textarea name="descripcion" placeholder="Descripción del proyecto" required></textarea>
+                <textarea id="descripcion" name="descripcion" placeholder="Descripción del proyecto" required></textarea>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128176;</span>
                 </label>
-                <input type="number" name="presupuesto" placeholder="Presupuesto estimado ($)" required>
+                <input type="number" id="presupuesto" name="presupuesto" placeholder="Presupuesto estimado ($)" required>
             </div>
             <div class="form-group">
                 <label>
@@ -73,9 +77,15 @@
                 </label>
                 <input type="email" name="correo" placeholder="Su Correo" required>
             </div>
-            <button type="submit" class="submit-btn">Enviar Proyecto</button>
+            <div class="g-recaptcha" data-sitekey="6LfbrrcrAAAAABbbaUoEr6MMiuyJSJvhFkiue65Q"></div>
+            <div id="mostrar"></div>
+            <div id="html_element"></div>
+
+            <button type="submit" onclick="submitProject()" class="submit-btn">Enviar Proyecto</button>
         </form>
     </section>
    </main>
+   `
 </body>
+<script src="script.js"></script>
 </html>
