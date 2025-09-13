@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Cristal</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+  
+
 </head>
 <body>
    <main>
@@ -19,36 +23,36 @@
     </section>
     <section class="right-side">
         <h2>Registrar Proyecto</h2>
-        <form action="#" class="project-form" id="project-form">
+        <form action="#" class="project-form">
             <div class="form-group">
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <input type="text" name="nombre" placeholder="Nombre del proyecto" required id="nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del proyecto" required>
             </div>
             <div>
                 <label>
                     <span class="logo-form">&#128197;</span>
                 </label>
-                <input type="text" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required id="plazo">
+                <input type="text" id="plazo" name="plazo" placeholder="Plazo estimado (Ej: 3 meses)" required>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128221;</span>
                 </label>
-                <textarea name="descripcion" placeholder="Descripción del proyecto" required id="descripcion"></textarea>
+                <textarea id="descripcion" name="descripcion" placeholder="Descripción del proyecto" required></textarea>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128176;</span>
                 </label>
-                <input type="number" name="presupuesto" placeholder="Presupuesto estimado ($)" required id="presupuesto">
+                <input type="number" id="presupuesto" name="presupuesto" placeholder="Presupuesto estimado ($)" required>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128187;</span>
                 </label>
-                <div class="categories" id="categories">
+                <div class="categories">
                     <label><input type="checkbox" name="categoria" value="Web" checked> Web</label>
                     <label><input type="checkbox" name="categoria" value="Moviles"> Móviles</label>
                     <label><input type="checkbox" name="categoria" value="IA"> IA</label>
@@ -59,23 +63,29 @@
                 <label>
                     <span class="icon">&#128100;</span>
                 </label>
-                <input type="text" name="nombre_usuario" placeholder="Su nombre" required id="nombre_usuario">
+                <input type="text" name="nombre_usuario" placeholder="Su nombre" required>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128241;</span>
                 </label>
-                <input type="text" name="whatsapp" placeholder="Su Whatsapp" required id="whatsapp">
+                <input type="text" name="whatsapp" placeholder="Su Whatsapp" required>
             </div>
             <div class="form-group">
                 <label>
                     <span class="icon">&#128231;</span>
                 </label>
-                <input type="email" name="correo" placeholder="Su Correo" id="correo">
+                <input type="email" name="correo" placeholder="Su Correo" required>
             </div>
-            <button type="submit" class="submit-btn" id="submit-btn">Enviar Proyecto</button>
+            <div class="g-recaptcha" data-sitekey="6LfbrrcrAAAAABbbaUoEr6MMiuyJSJvhFkiue65Q"></div>
+            <div id="mostrar"></div>
+            <div id="html_element"></div>
+
+            <button type="submit" onclick="submitProject()" class="submit-btn">Enviar Proyecto</button>
         </form>
     </section>
    </main>
+   `
 </body>
+<script src="script.js"></script>
 </html>
